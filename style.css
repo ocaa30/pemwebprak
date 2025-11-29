@@ -1,0 +1,88 @@
+:root {
+    --purple-funky: #6f42c1; 
+    --pink-funky: #ff69b4; 
+    --pink-light: #ffe8f0; 
+    --purple-light: #e6e6fa; 
+    --yellow-funky: #ffc107; 
+}
+
+.bg-pink-light {
+    background-color: var(--pink-light);
+}
+.bg-purple-light {
+    background-color: var(--purple-light);
+}
+
+.text-purple {
+    color: var(--purple-funky) !important;
+    font-weight: bold;
+}
+.text-pink {
+    color: var(--pink-funky) !important;
+    font-weight: bold;
+}
+
+.card-funky {
+    border: 5px dashed var(--purple-funky); 
+    border-radius: 25px; 
+    background: linear-gradient(135deg, white 90%, var(--yellow-funky) 10%); 
+    max-width: 450px;
+    width: 100%;
+    animation: bounce-in 0.8s ease-out; 
+}
+
+@keyframes bounce-in {
+    0% { transform: scale(0.5); opacity: 0; }
+    70% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+.input-funky {
+    border-radius: 15px; 
+    border: 2px solid var(--pink-funky);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.input-funky:focus {
+    border-color: var(--purple-funky);
+    box-shadow: 0 0 0 0.25rem rgba(111, 66, 193, 0.5); 
+}
+
+.btn-purple-funky {
+    background-color: var(--purple-funky);
+    border-color: var(--purple-funky);
+    color: white;
+    font-weight: bold;
+    border-radius: 50px; 
+    transition: transform 0.2s;
+}
+.btn-purple-funky:hover {
+    background-color: #5a34a0; 
+    border-color: #5a34a0;
+    transform: scale(1.05); 
+}
+
+.btn-pink-funky {
+    background-color: var(--pink-funky);
+    border-color: var(--pink-funky);
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+}
+.btn-pink-funky:hover {
+    background-color: #e04e9c;
+    border-color: #e04e9c;
+    transform: translateY(-2px); 
+}
+
+.jumbotron {
+    background-color: var(--pink-funky) !important;
+    color: white;
+    border: 8px solid var(--yellow-funky);
+    border-radius: 40px !important;
+}
+
+.bg-purple-funky {
+    background-color: var(--purple-funky) !important;
+}
