@@ -3,53 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selamat Datang! - App Ceria (Landing Page)</title>
+    <title>Selamat Datang! - App Ceria</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .notification-box {
-            border-left: 5px solid var(--yellow-funky);
-            padding: 15px;
-            margin-top: 20px;
-            background-color: #fff9e6;
-            text-align: left;
-        }
-    </style>
+    
+    <script>
+        // Fungsi ini akan dijalankan segera setelah halaman dimuat
+        window.onload = function() {
+            // Langsung arahkan pengguna ke halaman register.php
+            window.location.href = "register.php";
+        };
+    </script>
 </head>
 <body class="bg-purple-light">
     
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
-        <div class="card p-5 shadow-lg card-funky text-center" style="max-width: 650px; border-style: solid;">
+        <div class="card p-5 shadow-lg card-funky text-center" style="max-width: 600px; border-style: solid;">
             
-            <h1 class="display-3 text-pink mb-4">✨ Aplikasi Ceria! (Landing) ✨</h1>
-            <p class="lead text-purple mb-3">
-                Ini adalah halaman perkenalan statis dari Aplikasi Ceria.
+            <h1 class="display-4 text-pink mb-4">✨ Mengalihkan ke Halaman Pendaftaran... ✨</h1>
+            <p class="lead text-purple mb-5">
+                Jika Anda tidak diarahkan secara otomatis, silakan klik tombol di bawah.
             </p>
 
-            <div class="notification-box">
-                <p class="text-dark fw-bold mb-1">
-                    🚨 PENTING: Aplikasi ini adalah PHP Dinamis!
-                </p>
-                <p class="small text-muted mb-0">
-                    Untuk menggunakan fitur Login, Daftar, dan Upload file, Anda harus menjalankan semua file PHP
-                    pada **lingkungan server lokal (seperti XAMPP/MAMPP)** atau **Web Hosting** yang mendukung PHP dan MySQL.
-                </p>
+            <div class="d-grid col-8 mx-auto">
+                <a href="register.php" class="btn btn-purple-funky btn-lg">
+                    Lanjut ke Pendaftaran
+                </a>
             </div>
             
-            <div class="d-grid gap-3 col-8 mx-auto mt-5">
-                <a href="login.php" class="btn btn-purple-funky btn-lg">
-                    🔑 Coba Login Lokal (Jika Server Anda Aktif)
-                </a>
-                <a href="register.php" class="btn btn-pink-funky btn-lg">
-                    📝 Coba Daftar Lokal
-                </a>
-            </div>
-
-            <hr class="my-4">
-
-            <p class="text-muted small">
-                Kode sumber lengkap dapat dilihat di repositori GitHub ini.
-            </p>
         </div>
     </div>
 
